@@ -16,8 +16,9 @@ body {
 }
 #item-social-twitter a,
 #item-social-fb a {
-  background: white;
-  color: #84d5f7;
+  background: #C79665;
+  color: white;
+  border-color: white;
   border-radius: 100%;
   padding: 11px 0 1px 0;
   width: 41px;
@@ -27,7 +28,7 @@ body {
 }
 #item-social-twitter a:hover,
 #item-social-fb a:hover {
-  color: #5299b6;
+  color: #797493;
 }
 #elevator {
   z-index: 500;
@@ -77,7 +78,7 @@ body {
 .dbtn span {
   position: absolute;
   font-size: 0.7em;
-  color: black;
+  //color: black;
   bottom: 5px;
   left: 60px;
 }
@@ -96,7 +97,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #5299b6;
+  //color: #5299b6;
   outline: none;
 }
 h1,
@@ -110,7 +111,8 @@ h6 {
   font-weight: 700;
 }
 hr.star-light,
-hr.star-primary {
+hr.star-primary,
+hr.star-secondary {
   padding: 0;
   border: none;
   border-top: solid 5px;
@@ -119,7 +121,8 @@ hr.star-primary {
   margin: 25px auto 30px;
 }
 hr.star-light:after,
-hr.star-primary:after {
+hr.star-primary:after,
+hr.star-secondary:after {
   content: "\2741"; // see http://www.utf8icons.com/
   font-family: FontAwesome;
   display: inline-block;
@@ -129,25 +132,32 @@ hr.star-primary:after {
   padding: 0 0.25em;
 }
 hr.star-light {
-  border-color: white;
+  border-color: #C79665;
 }
 hr.star-light:after {
-  background-color: #5299b6;
-  color: white;
+  background-color: #AE5E53;
+  color: #C79665;
 }
 hr.star-primary {
-  border-color: #5299b6;
+  border-color: #C79665;
 }
 hr.star-primary:after {
-  background-color: white;
-  color: #5299b6;
+  background-color: #E8E1DC;
+  color: #C79665;
+}
+hr.star-secondary {
+  border-color: #CFB7AB;
+}
+hr.star-secondary:after {
+  background-color: #B8A69F;
+  color: #CFB7AB;
 }
 .img-centered {
   margin: 0 auto;
 }
 header {
   text-align: center;
-  background: #5299b6;
+  background: #AE5E53;
   color: white;
 }
 header .container {
@@ -230,7 +240,7 @@ section h2 {
   font-size: 3em;
 }
 section.success {
-  background: #5299b6;
+  background: #B8A69F;
   color: white;
 }
 @media (max-width: 767px) {
@@ -330,7 +340,7 @@ section.success {
 .btn-outline-dark.active {
   color: white;
   background: #5299b6;
-  border: solid 2px #5299b6;
+  border: solid 2px;// #5299b6;
 }
 .floating-label-form-group {
   position: relative;
@@ -395,14 +405,14 @@ footer h3 {
 }
 footer .footer-above {
   padding-top: 50px;
-  background-color: #5299b6;
+  background-color: #C79665;
 }
 footer .footer-col {
   margin-bottom: 50px;
 }
 footer .footer-below {
   padding: 25px 0;
-  background-color: #478ca8;
+  background-color: #CFB7AB;
 }
 .btn-social {
   display: inline-block;
@@ -418,6 +428,14 @@ footer .footer-below {
 .btn:active,
 .btn.active {
   outline: none;
+}
+.btn-success {
+  background-color: #797493;
+  border-color: #797493;
+}
+.btn-success:hover {
+  background-color: #B8A69F;
+  border-color: #B8A69F;
 }
 .scroll-top {
   position: fixed;
@@ -472,7 +490,7 @@ footer .footer-below {
 .portfolio-modal .close-modal .lr {
   height: 75px;
   width: 1px;
-  margin-left: 35px;
+  //margin-left: 35px;
   background-color: #5299b6;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -484,7 +502,7 @@ footer .footer-below {
 .portfolio-modal .close-modal .lr .rl {
   height: 75px;
   width: 1px;
-  background-color: #5299b6;
+  //background-color: #5299b6;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   /* IE 9 */
