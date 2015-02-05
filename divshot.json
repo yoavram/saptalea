@@ -2,5 +2,17 @@
   "name": "saptalea",
   "root": "public",
   "clean_urls": true,
-  "error_page": "error.html"
+  "error_page": "error.html",
+  "forms": {
+    "contact": {
+      "to": "info@saptalea.co.il",
+      "from": "website@saptalea.co.il",
+      "replyTo": "{{name}} <{{email}}>",
+      "subject": "הודעה נתקבלה מאת {{name}}",
+      "html": "<b>שם:</b> {{name}}<br>{{message}}",
+      "text": "שם: {{name}}\n{{message}}",
+      "success": "/contact-received",
+      "failure": "/contact-failure"
+    }
+  }
 }

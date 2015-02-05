@@ -514,3 +514,14 @@ footer .footer-below {
   opacity: 0;
   display: none;
 }
+.modal-dialog{
+position: absolute;
+left: 50%;
+margin-left: -312px;
+height: 500px;
+top: 50%;
+margin-top: -250px;
+} 
+.btn-close {
+float: left; 
+}
