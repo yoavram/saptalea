@@ -251,6 +251,11 @@ section.success {
   background: #B8A69F;
   color: white;
 }
+#gallery {
+  background: #AE5E53;
+  color: white;
+}
+
 @media (max-width: 767px) {
   section {
     padding: 75px 0;
