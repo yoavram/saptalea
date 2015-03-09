@@ -13,6 +13,7 @@ body {
   overflow-x: hidden;
   direction: rtl;
   font-family: 'hillel_clmmedium', sans-serif;
+  font-size: 15px;
 }
 #about {
   padding-bottom: 0;
@@ -34,7 +35,7 @@ body {
   width: 41px;
   height: 41px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 #item-social-twitter a:hover,
 #item-social-fb a:hover {
@@ -133,7 +134,7 @@ hr.star-secondary {
 hr.star-light:after,
 hr.star-primary:after,
 hr.star-secondary:after {
-  content: "\2741"; // see http://www.utf8icons.com/
+  content: "\2741"; 
   font-family: FontAwesome;
   display: inline-block;
   position: relative;
@@ -252,6 +253,9 @@ section.success {
   color: white;
 }
 @media (max-width: 767px) {
+    .portfolio-item {
+      width: 100%;
+    }
   section {
     padding: 75px 0;
   }
@@ -430,7 +434,7 @@ footer .footer-below {
   border-radius: 100%;
   text-align: center;
   font-size: 20px;
-  line-height: 45px;
+  line-height: 51px;
 }
 .btn:focus,
 .btn:active,
@@ -458,7 +462,7 @@ footer .footer-below {
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  line-height: 28px;
+  line-height: 37px;
 }
 .scroll-top .btn:focus {
   outline: none;
