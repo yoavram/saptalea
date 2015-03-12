@@ -13,6 +13,15 @@
       "text": "שם: {{name}}\n{{message}}",
       "success": "/contact-received",
       "failure": "/contact-failure"
+    },
+    "order": {
+      "to": "sales@saptalea.co.il",
+      "from": "website@saptalea.co.il",      
+      "subject": "הזמנה התקבלה מ{{name}}",
+      "html": "<b>שם:</b> {{name}}<br><b>מייל:</b> {{email}}<br><b>מוצר:</b>{{product}}",
+      "text": "שם: {{name}}\nמייל: {{email}}\nמוצר: {{product}}",
+      "success": "/order-received",
+      "failure": "/order-failure"
     }
   }
 }
