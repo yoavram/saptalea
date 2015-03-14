@@ -18,8 +18,8 @@
       "to": "sales@saptalea.co.il",
       "from": "website@saptalea.co.il",      
       "subject": "הזמנה התקבלה מ{{name}}",
-      "html": "<b>שם:</b> {{name}}<br><b>מייל:</b> {{email}}<br><b>מוצר:</b>{{product}}",
-      "text": "שם: {{name}}\nמייל: {{email}}\nמוצר: {{product}}",
+      "html": "<b>שם:</b> {{name}}<br><b>מייל:</b> {{email}}<br><b>כתובת:</b> {{address}}<br><b>איסוף עצמי:</b> {{takeaway}}<br><b>מוצר:</b>{{product}}",
+      "text": "שם: {{name}}\nמייל: {{email}}\nכתובת: {{address}}\nאיסוף עצמי: {{takeaway}}\nמוצר: {{product}}",
       "success": "/order-received",
       "failure": "/order-failure"
     }

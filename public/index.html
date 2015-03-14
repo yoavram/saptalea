@@ -65,7 +65,6 @@
       ga('send', 'pageview');
 
       </script>
-
   </head>
 
   <body id="page-top" class="index">
@@ -178,6 +177,7 @@
                     <h2>קטלוג</h2>
                     <hr class="star-secondary">
                     <h4>כל המוצרים בנויים מעץ, צבועים בצבעים ידידותיים לסביבה ועשויים בהרבה אהבה</h4>
+                    <h4>משלוח בתוספת תשלום או איסוף עצמי מפרדס חנה</h4>
                 </div>
             </div>
             <div class="row">
@@ -193,7 +193,8 @@
                             40x22x38 ס"מ /
                             גובה מושב 22 ס"מ <br>
                             לקטנטנים מגיל שנה <br>
-                            מתאים לנסיעה על משטחים ישרים
+                            מתאים לנסיעה על משטחים ישרים <br>
+                            משלוח - 75 ש"ח
                         </div>                        
                     </div>
                 </div>
@@ -209,7 +210,8 @@
                             80x37x90 ס"מ /
                             גובה משטח עבודה 54 ס"מ <br>
                             כולל: כיור, ברז, 4 כירות, כפתורים מסתובבים, "תנור", ארון מדפים וארגז נשלף <br>
-                            * אפשר גם בגובה 100 ס"מ / גובה משטח עבודה 60 ס"מ
+                            * אפשר גם בגובה 100 ס"מ / גובה משטח עבודה 60 ס"מ <br>
+                            משלוח - 165 ש"ח
                         </div>
                     </div>
                 </div>
@@ -223,7 +225,8 @@
                         </div>
                         <div class="caption-text">
                             77x31x70 ס"מ / גובה מושב 33 ס"מ <br>
-                            בנוי מעץ ממוחזר
+                            בנוי מעץ ממוחזר <br>
+                            משלוח - 148 ש"ח
                         </div>
                     </div>
                 </div>
@@ -233,9 +236,9 @@
 
                 <div class="col-sm-4 portfolio-item">
                     <div  style="padding-bottom: 60px">
-                    <img src="http://res.cloudinary.com/sapta-lea/image/upload/c_crop,e_auto_contrast,g_xy_center,w_3000,x_2300,y_1500/c_scale,w_200/v1425747424/P2243630_pgidbe.jpg" 
-                    class="img-rounded img-responsive" alt="עננים">
-                </div>
+                        <img src="http://res.cloudinary.com/sapta-lea/image/upload/c_crop,e_auto_contrast,g_xy_center,w_3000,x_2300,y_1500/c_scale,w_200/v1425747424/P2243630_pgidbe.jpg" 
+                        class="img-rounded img-responsive" alt="עננים">
+                    </div>
                     <div class="caption">
                         <div class="caption-content">
                             עננים <button class="btn btn-primary btn-order" product="עננים">להזמנה</button> <br>
@@ -250,8 +253,8 @@
 
                 <div class="col-sm-4 portfolio-item">
                     <div style="padding-bottom: 10px">
-                    <img src="http://res.cloudinary.com/sapta-lea/image/upload/c_scale,e_auto_contrast,w_200/v1426360825/IMG_20150310_121312_k5kgif.jpg" 
-                    class="img-rounded img-responsive" alt="מטבחונצ'יק">
+                        <img src="http://res.cloudinary.com/sapta-lea/image/upload/c_scale,e_auto_contrast,w_200/v1426360825/IMG_20150310_121312_k5kgif.jpg" 
+                        class="img-rounded img-responsive" alt="מטבחונצ'יק">
                     </div>
                     <div class="caption">
                         <div class="caption-content">
@@ -261,7 +264,8 @@
                         <div class="caption-text">
                             37x27x33 ס"מ /
                             מתקבפל לגובה 20 ס"מ <br>
-                            כולל: כיור, ברז, 2 כירות
+                            כולל: כיור, ברז, 2 כירות <br>
+                            משלוח - 70 ש"ח
                         </div>
                     </div>
                 </div>
@@ -278,7 +282,8 @@
                             40x30x90 ס"מ /
                             גובה משטח עבודה 54 ס"מ <br>
                             כולל: כיור, ברז, 2 כירות, כפתורים מסתובבים, "תנור", ומדף עם וילון <br>
-                            * אפשר גם בגובה 100 ס"מ / גובה משטח עבודה 60 ס"מ <br>
+                            * אפשר גם בגובה 100 ס"מ / גובה משטח עבודה 60 ס"מ  <br>
+                            משלוח - 150 ש"ח
                         </div>
                     </div>
                 </div>
@@ -398,7 +403,7 @@
         </a>
     </div>
 
-<!-- Order form modal -->
+    <!-- Order form modal -->
     <div class="modal fade" id="orderFormModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-sm">
         <div class="modal-content" style="padding: 0 0 0 0">
@@ -408,66 +413,80 @@
         <div class="modal-body">
             <h3>הזמנה</h3>
             <form method="POST" action="/__/forms/order" name="sentMessage" id="orderForm">                
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>שם</label>
-                                <input type="text" class="form-control" placeholder="שם" id="name" name="name" autofocus required data-validation-required-message="יש להזין שם.">
-                                <p class="help-block text-danger"></p>
-                            </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>שם</label>
+                        <input type="text" class="form-control" placeholder="שם" id="name" name="name" autofocus required data-validation-required-message="יש להזין שם.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>דוא"ל</label>
+                        <input type="email" class="form-control" placeholder='דוא"ל' id="email" name="email" required data-validation-required-message="יש להזין כתובת דואל.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>טלפון</label>
+                        <input type="tel" class="form-control" placeholder="מס' טלפון" id="tel" name="tel" data-validation-required-message="יש להזין מספר טלפון.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>כתובת למשלוח</label>
+                        <input type="text" class="form-control" id="address" placeholder="כתובת למשלוח" name="address" required data-validation-required-message="לאן לשלוח?">                                
+                        <p class="help-block text-danger"></p>
                         </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>דוא"ל</label>
-                                <input type="email" class="form-control" placeholder='דוא"ל' id="email" name="email" required data-validation-required-message="יש להזין כתובת דואל.">
-                                <p class="help-block text-danger"></p>
-                            </div>
+                        </div>                
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" name="takeaway">&nbsp;&nbsp;&nbsp; איסוף עצמי
+                            </label>
+                        
+                    
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>הזמנה</label>
+                        <input type="text" class="form-control" id="product" name="product" required data-validation-required-message="מה תרצה להזמין?">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <br>
+                <div id="success"></div>
+                <div class="row">
+                    <div class="form-group col-xs-12">
+                        <div class="btn-group" role="group" aria-label="..."  style="float: left;">
+                            <button type="button" class="btn btn-default btn-lg btn-close" data-dismiss="modal">סגור</button>
+                            <button type="submit" class="btn btn-success btn-lg">שלח</button>
                         </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>טלפון</label>
-                                <input type="tel" class="form-control" placeholder="מס' טלפון" id="tel" name="tel" data-validation-required-message="יש להזין מספר טלפון.">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <div class="row control-group">
-                            <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>הזמנה</label>
-                                <input type="text" class="form-control" id="product" name="product" required data-validation-required-message="מה תרצה להזמין?">
-                                <p class="help-block text-danger"></p>
-                            </div>
-                        </div>
-                        <br>
-                        <div id="success"></div>
-                        <div class="row">
-                            <div class="form-group col-xs-12">
-                                <div class="btn-group" role="group" aria-label="..."  style="float: left;">
-                                    <button type="button" class="btn btn-default btn-lg btn-close" data-dismiss="modal">סגור</button>
-                                    <button type="submit" class="btn btn-success btn-lg">שלח</button>
-                                </div>
-                            </div>                            
-                        </div>
-                    </form>
+                    </div>                            
+                </div>
+            </form>
         </div>        
     </div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-    <!-- Form success modal -->
-    <div class="modal fade" id="formSuccessModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content" style="padding: 0 0 0 0">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">&nbsp;תודה</h4>
-        </div>
-        <div class="modal-body">
-            <p>הודעתך נשלחה, ניצור קשר בהקדם.            
-            </p>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-default btn-close" data-dismiss="modal">סגור</button>
-        </div>
-    </div><!-- /.modal-content -->
+<!-- Form success modal -->
+<div class="modal fade" id="formSuccessModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content" style="padding: 0 0 0 0">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">&nbsp;תודה</h4>
+    </div>
+    <div class="modal-body">
+        <p>הודעתך נשלחה, ניצור קשר בהקדם.            
+        </p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default btn-close" data-dismiss="modal">סגור</button>
+    </div>
+</div><!-- /.modal-content -->
 </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
