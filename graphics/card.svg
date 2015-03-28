@@ -17,7 +17,10 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="logo.svg">
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="D:\workspace\saptalea\graphics\logo1.png"
+   inkscape:export-xdpi="32.957493"
+   inkscape:export-ydpi="32.957493">
   <defs
      id="defs4">
     <linearGradient
@@ -67,7 +70,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.56568543"
-     inkscape:cx="274.13651"
+     inkscape:cx="9.8553466"
      inkscape:cy="390.78552"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -89,7 +92,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
