@@ -15,9 +15,6 @@ body {
   font-family: 'hillel_clmmedium', sans-serif;
   font-size: 15px;
 }
-#about {
-  padding-bottom: 0;
-}
 .navbar-brand {
   float: right;
 }
@@ -71,10 +68,6 @@ body {
 }
 .caption-text {
   white-space: pre-line;
-}
-#about .col-lg-4,
-#about .col-lg-2 {
-  float: right;
 }
 .alert .close {
   margin-left: 10px;
