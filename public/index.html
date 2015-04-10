@@ -169,7 +169,7 @@
     </section>
 
     <!-- Catalog Section -->
-    <section class="success" id="catalog">
+    <section class="success" id="catalog" ng-app="catalogApp" ng-controller="catalogCtrl">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -181,112 +181,17 @@
             </div>
             <div class="row">
 
-                <div class="col-sm-4 portfolio-item">
-                    <img src="http://res.cloudinary.com/sapta-lea/image/upload/c_crop,e_auto_contrast,g_south,w_2500/c_scale,w_200/v1425747593/P2243631_ffz0al.jpg" class="img-rounded img-responsive" alt="אופנוע">
+                <div class="col-sm-4 portfolio-item" ng-repeat="prd in products">
+                    <img ng-src="{{ prd.img }}" class="img-rounded img-responsive" alt="{{ prd.name }}">
                     <div class="caption">
                         <div class="caption-content">
-                            אופנוע <button class="btn btn-primary btn-order" product="אופנוע">להזמנה</button> <br>
-                            <small>250 ש"ח</small>
+                            {{ prd.name }} <button class="btn btn-primary btn-order" product="{{ prd.name }}">להזמנה</button> <br>
+                            <small>{{ prd.price }} ש"ח</small>
                         </div>
-                        <div class="caption-text">
-                            40x22x38 ס"מ /
-                            גובה מושב 22 ס"מ <br>
-                            לקטנטנים מגיל שנה <br>
-                            מתאים לנסיעה על משטחים ישרים <br>
-                            משלוח - 75 ש"ח
+                        <div class="caption-text">{{ prd.description }}
                         </div>
                     </div>
                 </div>
-
-                <div class="col-sm-4 portfolio-item">
-                    <img src="http://res.cloudinary.com/sapta-lea/image/upload/a_auto_right,c_scale,e_auto_contrast,w_200/v1425747156/P2243621_bfeh4t.jpg" class="img-rounded img-responsive" alt="מטבח רחב">
-                    <div class="caption">
-                        <div class="caption-content">
-                            מטבח <button class="btn btn-primary btn-order" product="מטבח">להזמנה</button> <br>
-                            <small>850 ש"ח</small>
-                        </div>
-                        <div class="caption-text">
-                            80x37x90 ס"מ /
-                            גובה משטח עבודה 54 ס"מ <br>
-                            כולל: כיור, ברז, 4 כירות, כפתורים מסתובבים, "תנור", ארון מדפים וארגז נשלף <br>
-                            * אפשר גם בגובה 100 ס"מ / גובה משטח עבודה 60 ס"מ <br>
-                            משלוח - 165 ש"ח
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 portfolio-item">
-                    <img src="http://res.cloudinary.com/sapta-lea/image/upload/c_scale,e_auto_contrast,w_200/v1425747665/P2243632_xdxjlm.jpg" class="img-rounded img-responsive" alt="סוס עץ">
-                    <div class="caption">
-                        <div class="caption-content">
-                            סוס עץ <button class="btn btn-primary btn-order" product="סוס עץ">להזמנה</button> <br>
-                            <small>350 ש"ח</small>
-                        </div>
-                        <div class="caption-text">
-                            77x31x70 ס"מ / גובה מושב 33 ס"מ <br>
-                            בנוי מעץ ממוחזר <br>
-                            משלוח - 148 ש"ח
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row">
-
-                <div class="col-sm-4 portfolio-item">
-                    <div  style="padding-bottom: 60px">
-                        <img src="http://res.cloudinary.com/sapta-lea/image/upload/c_crop,e_auto_contrast,g_xy_center,w_3000,x_2300,y_1500/c_scale,w_200/v1425747424/P2243630_pgidbe.jpg"
-                        class="img-rounded img-responsive" alt="עננים">
-                    </div>
-                    <div class="caption">
-                        <div class="caption-content">
-                            עננים <button class="btn btn-primary btn-order" product="עננים">להזמנה</button> <br>
-                            <small>60 ש"ח</small>
-                        </div>
-                        <div class="caption-text">
-                            מידות משתנות <br>
-                            ענני עץ צבעוניים לתלייה על קיר
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 portfolio-item">
-                    <div style="padding-bottom: 10px">
-                        <img src="http://res.cloudinary.com/sapta-lea/image/upload/c_scale,e_auto_contrast,w_200/v1426360825/IMG_20150310_121312_k5kgif.jpg"
-                        class="img-rounded img-responsive" alt="מטבחונצ'יק">
-                    </div>
-                    <div class="caption">
-                        <div class="caption-content">
-                            מטבחונצ'יק <button class="btn btn-primary btn-order" product="מטבחונציק">להזמנה</button> <br>
-                            <small>250 ש"ח</small>
-                        </div>
-                        <div class="caption-text">
-                            37x27x33 ס"מ /
-                            מתקבפל לגובה 20 ס"מ <br>
-                            כולל: כיור, ברז, 2 כירות <br>
-                            משלוח - 70 ש"ח
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4 portfolio-item">
-                    <img src="http://res.cloudinary.com/sapta-lea/image/upload/c_crop,g_north,h_1650,w_2048/a_0/c_scale,e_auto_contrast,w_200/v1426361428/IMG_20150310_115754_oee0ro.jpg"
-                    class="img-rounded img-responsive" alt="מטבח צר">
-                    <div class="caption">
-                        <div class="caption-content">
-                            מטבח צר <button class="btn btn-primary btn-order" product="מטבח צר">להזמנה</button> <br>
-                            <small>450 ש"ח</small>
-                        </div>
-                        <div class="caption-text">
-                            40x30x90 ס"מ /
-                            גובה משטח עבודה 54 ס"מ <br>
-                            כולל: כיור, ברז, 2 כירות, כפתורים מסתובבים, "תנור", ומדף עם וילון <br>
-                            * אפשר גם בגובה 100 ס"מ / גובה משטח עבודה 60 ס"מ  <br>
-                            משלוח - 150 ש"ח
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -515,6 +420,9 @@
 <!-- Bootstrap Core JavaScript -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
+<!-- Angular source -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.15/angular.min.js"></script>
+
 <!-- Plugin JavaScript -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="js/classie.js"></script>
@@ -534,5 +442,17 @@ if(location.hostname == "saptalea.co.il"){
     ;NREUM.info={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",licenseKey:"771ca6322d",applicationID:"12524567",sa:1,agent:"js-agent.newrelic.com/nr-515.min.js"}
 }
 </script>
+
+<!-- Angular catalog app -->
+<script>
+var app = angular.module('catalogApp', []);
+app.controller('catalogCtrl', ['$scope', '$http',
+  function($scope, $http) {
+  $http.get('products.json').success(function(data) {
+    $scope.products = data;
+  });
+}])
+</script>
+
 </body>
 </html>

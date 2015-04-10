@@ -66,6 +66,9 @@ body {
   padding-bottom: 20px;
   text-align: center;
 }
+.caption-text {
+  white-space: pre;
+}
 #about .col-lg-4,
 #about .col-lg-2 {
   float: right;
@@ -134,7 +137,7 @@ hr.star-secondary {
 hr.star-light:after,
 hr.star-primary:after,
 hr.star-secondary:after {
-  content: "\2741"; 
+  content: "\2741";
   font-family: FontAwesome;
   display: inline-block;
   position: relative;
@@ -538,9 +541,9 @@ margin-left: -312px;
 height: 500px;
 top: 50%;
 margin-top: -250px;
-} 
+}
 .btn-close {
-float: left; 
+float: left;
 }
 @media (max-width: 768px) {
   .modal-dialog {
