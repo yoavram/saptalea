@@ -11,9 +11,9 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="297mm"
-   height="210mm"
-   viewBox="0 0 1052.3622 744.09448"
+   width="29.700001cm"
+   height="5.5687847cm"
+   viewBox="0 0 1052.3622 197.31914"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -70,16 +70,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.5"
-     inkscape:cx="567.94569"
+     inkscape:cx="368.22027"
      inkscape:cy="388.34781"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="706"
+     inkscape:window-width="1680"
+     inkscape:window-height="988"
      inkscape:window-x="-8"
      inkscape:window-y="32"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     units="cm">
     <inkscape:grid
        type="xygrid"
        id="grid4193" />
@@ -100,7 +101,7 @@
      inkscape:label="black lace"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-308.26772)"
+     transform="translate(0,-855.04306)"
      style="display:none;opacity:1">
     <flowRoot
        xml:space="preserve"
@@ -111,8 +112,7 @@
            width="291.42856"
            height="97.14286"
            x="114.28571"
-           y="198.07649"
-           style="" /></flowRegion><flowPara
+           y="198.07649" /></flowRegion><flowPara
          id="flowPara3346" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot3348"
@@ -122,8 +122,7 @@
            width="257.14285"
            height="325.71429"
            x="337.14285"
-           y="206.64792"
-           style="" /></flowRegion><flowPara
+           y="206.64792" /></flowRegion><flowPara
          id="flowPara3354" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot3367"
@@ -133,8 +132,7 @@
            width="185"
            height="155"
            x="473.75"
-           y="222.3622"
-           style="" /></flowRegion><flowPara
+           y="222.3622" /></flowRegion><flowPara
          id="flowPara3373" /></flowRoot>    <image
        y="389.60321"
        x="297.39886"
@@ -154,28 +152,29 @@
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="green lace" />
+     inkscape:label="green lace"
+     transform="translate(0,-546.77534)" />
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="text"
-     transform="translate(0,-308.26772)">
+     transform="translate(0,-855.04306)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:225px;line-height:125%;font-family:'Hillel CLM';-inkscape-font-specification:'Hillel CLM, Medium';text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       x="539.28992"
-       y="750.71918"
+       x="533.28992"
+       y="1020.7192"
        id="text3336"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         x="539.28992"
-         y="750.71918"
+         x="533.28992"
+         y="1020.7192"
          style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:225px;line-height:125%;font-family:'Hillel CLM';-inkscape-font-specification:'Hillel CLM, Medium';text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          id="tspan6414">ספתא לאה</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot5862"
-       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
          id="flowRegion5864"><rect
            id="rect5866"
            width="129.29953"
@@ -185,8 +184,8 @@
          id="flowPara5868" /></flowRoot>    <circle
        style="opacity:0.89499996;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path6464"
-       cx="839.45709"
-       cy="682.96613"
+       cx="833.45709"
+       cy="952.96613"
        r="7.0710678" />
   </g>
 </svg>
