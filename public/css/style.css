@@ -47,6 +47,9 @@ body {
 .navbar-header {
   float: right;
 }
+.portfolio-img {
+  min-height: 215px;
+}
 .portfolio-item {
   float: right;
   text-align: center;
@@ -67,7 +70,7 @@ body {
   text-align: center;
 }
 .caption-text {
-  white-space: pre;
+  white-space: pre-line;
 }
 #about .col-lg-4,
 #about .col-lg-2 {

@@ -3,21 +3,24 @@
     "_id": 1,
     "name": "אופנוע",
     "price": 250,
-    "description": "40x22x38 ס\"מ / גובה מושב 22 ס\"מ\nלקטנטנים מגיל שנה\nמתאים לנסיעה על משטחים ישרים\nמשלוח - 75 ש\"ח",
+    "description": "40x22x38 ס\"מ / גובה מושב 22 ס\"מ\nלקטנטנים מגיל שנה\nמתאים לנסיעה על משטחים ישרים",
+    "shipping": 75,
     "img": "http://res.cloudinary.com/sapta-lea/image/upload/c_crop,e_auto_contrast,g_south,w_2500/c_scale,w_200/v1425747593/P2243631_ffz0al.jpg"
   },
   {
     "_id": 2,
     "name": "מטבח",
     "price": 850,
-    "description": "80x37x90 ס\"מ / גובה משטח עבודה 54 ס\"מ \nכולל: כיור, ברז, 4 כירות, כפתורים מסתובבים, \"תנור\", ארון מדפים וארגז נשלף \n* אפשר גם בגובה 100 ס\"מ / גובה משטח עבודה 60 ס\"מ \nמשלוח - 165 ש\"ח",
+    "description": "80x37x90 ס\"מ / גובה משטח עבודה 54 ס\"מ \nכולל: כיור, ברז, 4 כירות, כפתורים מסתובבים, \"תנור\", ארון מדפים וארגז נשלף \n* אפשר גם בגובה 100 ס\"מ / גובה משטח עבודה 60 ס\"מ",
+    "shipping": 165,
     "img": "http://res.cloudinary.com/sapta-lea/image/upload/a_auto_right,c_scale,e_auto_contrast,w_200/v1425747156/P2243621_bfeh4t.jpg"
   },
   {
     "_id": 3,
     "name": "סוס עץ",
     "price": 350,
-    "description": "77x31x70 ס\"מ / גובה מושב 33 ס\"מ \nבנוי מעץ ממוחזר \nמשלוח - 148 ש\"ח",
+    "description": "77x31x70 ס\"מ / גובה מושב 33 ס\"מ \nבנוי מעץ ממוחזר",
+    "shipping": 148,
     "img": "http://res.cloudinary.com/sapta-lea/image/upload/c_scale,e_auto_contrast,w_200/v1425747665/P2243632_xdxjlm.jpg"
   },
   {
@@ -25,20 +28,23 @@
     "name": "עננים",
     "price": 60,
     "description": "מידות משתנות \nענני עץ צבעוניים לתלייה על קיר",
+    "shipping": 0,
     "img": "http://res.cloudinary.com/sapta-lea/image/upload/c_crop,e_auto_contrast,g_xy_center,w_3000,x_2300,y_1500/c_scale,w_200/v1425747424/P2243630_pgidbe.jpg"
   },
   {
     "_id": 5,
     "name": "מטבחונצ'יק",
     "price": 250,
-    "description": "37x27x33 ס\"מ / מתקפל לגובה 20 ס\"מ \nכולל: כיור, ברז, 2 כירות \nמשלוח - 70 ש\"ח",
+    "description": "37x27x33 ס\"מ / מתקפל לגובה 20 ס\"מ \nכולל: כיור, ברז, 2 כירות",
+    "shipping": 70,
     "img": "http://res.cloudinary.com/sapta-lea/image/upload/c_scale,e_auto_contrast,w_200/v1426360825/IMG_20150310_121312_k5kgif.jpg"
   },
   {
     "_id": 6,
     "name": "מטבח צר",
     "price": 450,
-    "description": "40x30x90 ס\"מ / גובה משטח עבודה 54 ס\"מ \nכולל: כיור, ברז, 2 כירות, כפתורים מסתובבים, \"תנור\", ומדף עם וילון \n* אפשר גם בגובה 100 ס\"מ / גובה משטח עבודה 60 ס\"מ \nמשלוח - 150 ש\"ח",
+    "description": "40x30x90 ס\"מ / גובה משטח עבודה 54 ס\"מ \nכולל: כיור, ברז, 2 כירות, כפתורים מסתובבים, \"תנור\", ומדף עם וילון \n* אפשר גם בגובה 100 ס\"מ / גובה משטח עבודה 60 ס\"מ",
+    "shipping": 150,
     "img": "http://res.cloudinary.com/sapta-lea/image/upload/c_crop,g_north,h_1650,w_2048/a_0/c_scale,e_auto_contrast,w_200/v1426361428/IMG_20150310_115754_oee0ro.jpg"
   }
 ]

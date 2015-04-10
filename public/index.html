@@ -181,13 +181,16 @@
             </div>
             <div class="row">
                 <div class="col-md-4 portfolio-item" ng-repeat-start="prd in products">
-                    <img ng-src="{{ prd.img }}" class="img-rounded img-responsive" alt="{{ prd.name }}">
+                    <div class="portfolio-img">
+                      <img ng-src="{{ prd.img }}" class="img-rounded img-responsive" alt="{{ prd.name }}">
+                    </div>
                     <div class="caption">
                         <div class="caption-content">
                             {{ prd.name }} <button class="btn btn-primary btn-order" product="{{ prd.name }}">להזמנה</button> <br>
                             <small>{{ prd.price }} ש"ח</small>
                         </div>
                         <div class="caption-text">{{ prd.description }}
+                          {{ prd.shipping > 0 ? "משלוח - " + prd.shipping + " ש\"ח" : "" }}
                         </div>
                     </div>
                 </div>
