@@ -180,8 +180,7 @@
                 </div>
             </div>
             <div class="row">
-
-                <div class="col-sm-4 portfolio-item" ng-repeat="prd in products">
+                <div class="col-md-4 portfolio-item" ng-repeat-start="prd in products">
                     <img ng-src="{{ prd.img }}" class="img-rounded img-responsive" alt="{{ prd.name }}">
                     <div class="caption">
                         <div class="caption-content">
@@ -192,6 +191,8 @@
                         </div>
                     </div>
                 </div>
+                <div class="clearfix" ng-if="$index%3==2"></div>
+                <div ng-repeat-end=""></div>
             </div>
         </div>
     </section>
