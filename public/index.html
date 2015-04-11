@@ -184,7 +184,7 @@
                     </div>
                     <div class="caption">
                         <div class="caption-content">
-                            {{ prd.name }} <button class="btn btn-primary btn-order" product="{{ prd.name }}">להזמנה</button> <br>
+                            {{ prd.name }} <button class="btn btn-primary" ng-click="showOrderForm(prd.name)">להזמנה</button> <br>
                             <small>{{ prd.price }} ש"ח</small>
                         </div>
                         <div class="caption-text">{{ prd.description }}
@@ -433,9 +433,30 @@
 <!-- Custom Theme JavaScript -->
 <script src="js/freelancer.js"></script>
 
-<!-- Site Specific JavaScript -->
-<script src="js/saptalea.js"></script>
 
+<!-- Site Specific JavaScript -->
+<script>
+//callback handler for form submit
+$("form").submit(function(e) {
+    var postData = $(this).serializeArray();
+    var formURL = $(this).attr("action");
+    $.ajax(
+    {
+        url : formURL,
+        type: "POST",
+        data : postData,
+        success:function(data, textStatus, jqXHR)
+        {
+            $('#formSuccessModal').modal('toggle');
+        },
+        error: function(jqXHR, textStatus, errorThrown)
+        {
+            $('#formFailureModal').modal('toggle');
+        }
+    });
+    e.preventDefault(); //STOP default action
+});
+</script>
 
 <!-- New Relic -->
 <script type="text/javascript">
@@ -448,11 +469,18 @@ if(location.hostname == "saptalea.co.il"){
 <!-- Angular catalog app -->
 <script>
 var app = angular.module('catalogApp', []);
+
 app.controller('catalogCtrl', ['$scope', '$http',
   function($scope, $http) {
-  $http.get('products.json').success(function(data) {
-    $scope.products = data;
-  });
+    $http.get('products.json').success(function(data) {
+      $scope.products = data;
+    });
+    $scope.showOrderForm = function(prdName) {
+        $('#orderFormModal').modal('show');
+        $('#orderFormModal #product').val(prdName);
+        $('#orderFormModal #name').focus();
+    };
+
 }])
 </script>
 
