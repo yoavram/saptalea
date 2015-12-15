@@ -196,7 +196,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <form method="POST" action="/__/forms/contact" name="sentMessage" id="contactForm">
+                    <form id="contactForm">
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>שם</label>
@@ -207,7 +207,7 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>דואל</label>
-                                <input type="email" class="form-control" placeholder='דוא"ל' id="email" name="email" required data-validation-required-message="יש להזין כתובת דואל.">
+                                <input type="email" name="_replyto" class="form-control" placeholder='דוא"ל' id="email" required data-validation-required-message="יש להזין כתובת דואל.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -334,15 +334,20 @@
 <!-- Site Specific JavaScript -->
 <script>
 //callback handler for form submit
-$("form").submit(function(e) {
-    var postData = $(this).serializeArray();
-    var formURL = $(this).attr("action");
+$("#contactForm").submit(function(e) {
     $.ajax(
     {
-        url : formURL,
-        type: "POST",
-        data : postData,
-        success:function(data, textStatus, jqXHR)
+        url : "//formspree.io/tal@saptalea.co.il",
+        method: "POST",
+        dataType: "json",
+        data:
+        {
+            message: $('#contactForm #message').val(),
+            name: $('#contactForm #name').val(),
+            _replyto: $('#contactForm #email').val(),
+            _subject: "צור קשר - ספתא לאה"
+        },
+        success: function(data, textStatus, jqXHR)
         {
             $('#formSuccessModal').modal('toggle');
         },
